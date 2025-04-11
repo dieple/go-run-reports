@@ -15,7 +15,7 @@
 
 # Dependency directories (if any)
 /bin/
-/pkg/
+
 
 # Logs and temp files
 *.log
