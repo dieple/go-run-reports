@@ -1,0 +1,42 @@
+# Binaries
+/usage-tracker
+*.exe
+*.exe~
+*.dll
+*.so
+*.dylib
+
+# Output of `go build`
+*.out
+
+# Go modules
+/go.sum
+/vendor/
+
+# Dependency directories (if any)
+/bin/
+/pkg/
+
+# Logs and temp files
+*.log
+*.tmp
+*.swp
+*.swo
+
+# IDE/editor configs
+.vscode/
+.idea/
+*.code-workspace
+
+# OS files
+.DS_Store
+Thumbs.db
+
+# Docker-related
+*.tar
+docker-compose.override.yml
+.env
+
+# Test artifacts
+coverage.out
+*.test
