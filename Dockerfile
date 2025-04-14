@@ -15,7 +15,7 @@ RUN go mod download
 COPY . .
 
 # Build the binary
-RUN CGO_ENABLED=0 GOOS=linux go build -o run-reports ./cms/server
+RUN CGO_ENABLED=0 GOOS=linux go build -o go-run-reports ./cms/server
 
 # Stage 2: Create a minimal image
 FROM alpine:latest
@@ -24,10 +24,10 @@ FROM alpine:latest
 WORKDIR /root/
 
 # Copy the binary from the builder stage
-COPY --from=builder /app/run-reports .
+COPY --from=builder /app/go-run-reports .
 
 # Expose the application port (customize if needed)
 EXPOSE 8080
 
 # Run the binary
-CMD ["./run-reports"]
+CMD ["./go-run-reports"]
