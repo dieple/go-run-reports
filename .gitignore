@@ -10,7 +10,6 @@
 *.out
 
 # Go modules
-/go.sum
 /vendor/
 
 # Dependency directories (if any)
