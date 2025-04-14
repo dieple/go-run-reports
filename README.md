@@ -12,7 +12,7 @@ A usage tracking system for Xapien customers to enforce and monitor monthly repo
 - AWS-native design (DynamoDB, IAM, EKS)
 
 ## 📁 Project Structure
-
+```bash
 go-run-reports/
 ├── cmd/server           # Main app entrypoint
 ├── internal/api         # HTTP handlers
@@ -22,6 +22,7 @@ go-run-reports/
 ├── internal/config      # Config loader
 ├── internal/notifier    # Simulated notification
 ├── pkg/util             # Time/month utilities
+```
 
 ## 🚀 Quick Start
 
